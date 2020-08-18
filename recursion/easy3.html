@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recursion - Easy 1</title>
+    <link rel="stylesheet" href="../main.css">
+</head>
+<body>
+    <div class="question">Write a recursive function called fib which accepts a number and return the nth number in the Fibonacci sequence. <br>Recall that the Fibonacci sequence is the sequence of whole numbers 1, 1, 2, 3, 4, 5, ... which start with 1 and 1, <br>and where every number thereafter is equal to the sum of the previous two numbers</div>
+    <div class="example">
+        // SAMPLE INPUT/OUTPUT <br>
+        // fib(4) // 3 <br>
+        // fib(10) // 55 <br>
+        // fib(28) // 317811
+ <br>
+ // fib(35) // 9227465 <br>
+    </div>
+    <div class="solution">My Solution
+        <span>
+            <br>
+            function fib(num){
+                <br>
+                if (num <= 2) {<br>
+                    return 1;
+                    <br>
+            }<br>
+            <br>
+            return fib(num -1) + fib(num -2);
+            <br>
+         }
+         </span>
+    </div>
+    <a href="../index.html">Main</a>
+    <a href="./easy3.html">Recursion - Easy 3</a>
+</body>
+</html>
